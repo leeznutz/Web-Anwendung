@@ -1,8 +1,8 @@
 {
-    "logoURL" : "public/images/logo.svg",
-    "socials1" : "public/images/facebook.jpg",
-    "socials2" : "public/images/instagram.jpg",
-    "socials3" : "public/images/twitter.jpg",
-    "heroImgMain" : "https://picsum.photos/1600/720",
-    "imgListElement" : "https://picsum.photos/1000/100" 
+    "logoURL": "../public/images/logo.svg",
+    "socials1": "../public/images/facebook.jpg",
+    "socials2": "../public/images/instagram.jpg",
+    "socials3": "../public/images/twitter.jpg",
+    "heroImgMain": "https://picsum.photos/1600/720",
+    "imgListElement": "https://picsum.photos/1000/100"
 }

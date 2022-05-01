@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 2em;
+}
+
 header,
 footer {
     background-color: #008989;
@@ -124,15 +133,15 @@ hr {
 }
 
 .contentBlock {
-    padding: 20px;
-    background: rgba(125,125,125,0.2);
+    padding: 40px;
+    background: rgba(125, 125, 125, 0.2);
 }
 
 .heroImgWrapper {
     height: 350px;
 }
 
-#loginBlock > .heroImgWrapper {
+#entryBlock>.heroImgWrapper {
     height: 500px;
 }
 
@@ -148,12 +157,15 @@ hr {
     text-indent: 20px;
     width: 110px;
 }
+
 #headings p:nth-child(2) {
     flex: 3;
 }
+
 #headings h4:nth-child(3) {
     flex: 3;
 }
+
 #headings h4:nth-child(4) {
     flex: 3;
 }
@@ -169,6 +181,7 @@ hr {
     border: 2px black solid;
     padding: 10px;
 }
+
 .listElement div:nth-of-type(1) {
     height: 100px;
 }
@@ -176,9 +189,11 @@ hr {
 .listElement .topicTitle {
     flex: 3;
 }
+
 .listElement .topicReacts {
     flex: 3;
 }
+
 .listElement .topicText {
     flex: 3;
     white-space: nowrap;
@@ -186,34 +201,50 @@ hr {
     text-overflow: ellipsis;
 }
 
-
-#loginBlock {
+#entryBlock {
     display: flex;
 }
 
-#loginBlock > * {
-    flex: 1;
+#entryBlock>* {
+    flex: 1 1 50%;
 }
 
-#loginBlock input {
+#entryBlock input {
     display: block;
-    margin: 5px 0;
+    margin-top: 12px;
 }
 
-#loginBlock .textInput {
+#entryBlock .textInput {
     width: 100%;
     border: 0;
     border-bottom: 1px solid black;
     background: none;
 }
 
-#loginBlock .loginForm {
+/* Box für PLZ und Stadt Eingabe*/
+#entryBlock .oneLineInput {
+    display: flex;
+    gap: 20px;
+}
+
+/* PLZ */
+#entryBlock .oneLineInput :nth-child(1) {
+    flex: 1 1 30%;
+}
+
+/* Stadt */
+#entryBlock .oneLineInput :nth-child(2) {
+    flex: 1 1 70%;
+}
+
+#entryBlock .loginForm {
+    box-sizing: border-box;
     padding-right: 100px;
 }
 
 
 @media(max-width:750px) {
-    #loginBlock {
+    #entryBlock {
         display: block;
     }
 
@@ -224,16 +255,19 @@ hr {
         align-items: flex-start;
         height: calc(100px + 2em);
     }
+
     .listElement .topicReacts {
         padding-top: 5px;
         padding-left: 25px;
         order: 2;
     }
+
     .listElement .topicTitle {
         margin-top: 20px;
         flex: 1;
         order: 3;
     }
+
     .listElement .topicText {
         flex: 2;
         width: 100%;
@@ -247,6 +281,7 @@ hr {
     #searchBar {
         width: 100%;
     }
+
     #toTop {
         display: none;
     }
@@ -266,7 +301,7 @@ hr {
     }
 
     /*
-        die Linie soll im kleinen Modus mehr abstand zu den Buttons haben
+        die Linie soll im kleinen Modus mehr Abstand zu den Buttons haben
     */
     footer div hr {
         margin-top: 20px;

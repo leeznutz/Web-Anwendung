@@ -1,0 +1,16 @@
+---
+"template": "_layout"
+---
+<div id="entryBlock">
+    <div class="loginForm contentBlock">
+        {{ content }}
+    </div>
+    <div class="heroImgWrapper">
+        <!-- TODO: can go once we have non-Placeholder Images -->
+        {{#if page.heroImg}}
+        <img class="heroImg" src={{ page.heroImg }} alt="big_Image">
+        {{else}}
+        <img class="heroImg" src={{ global.heroImgMain }} alt="big_Image">
+        {{/if}}
+    </div>
+</div>
