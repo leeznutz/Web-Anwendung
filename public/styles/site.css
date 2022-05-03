@@ -141,8 +141,18 @@ hr {
     height: 350px;
 }
 
+.profileImgWrapper {
+    height: 150px;
+    width: 150px;
+}
+
 #entryBlock>.heroImgWrapper {
     height: 500px;
+}
+
+.profileWrapper {
+    display: flex;
+    padding: 50px;
 }
 
 #headings {
@@ -209,12 +219,33 @@ hr {
     flex: 1 1 50%;
 }
 
-#entryBlock input {
+#EntryBlock input {
     display: block;
     margin-top: 12px;
 }
+.inputLabel {
+    display: inline;
+}
+.inputDesc {
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+}
+.inputRow {
+    margin-bottom: 15px;
+}
 
-#entryBlock .textInput {
+.listWithoutDots {
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+.textInputWithLabel {
+    box-sizing: border-box;
+    width: 49%;
+}
+
+#EntryBlock .textInput {
     width: 100%;
     border: 0;
     border-bottom: 1px solid black;
