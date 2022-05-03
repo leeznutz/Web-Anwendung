@@ -243,7 +243,6 @@ footer div hr {
 
 
 @media(min-width:750px) {
-
     /* ############ -entry- ############ */
     #entry {
         display: flex;
@@ -283,7 +282,7 @@ footer div hr {
         order: 2;
     }
 
-    footer div hr {
+    footer .footerLink hr {
         margin-top: 10px;
     }
 
@@ -294,4 +293,4 @@ footer div hr {
         height: 2em;
         margin: auto 0;
     }
-}
+} /* end media(min-width:750px) */
