@@ -16,6 +16,17 @@
     transition: transform 0.2s;
 }
 
+.bigBtnLink {
+    width: 150px;
+    height: 2em;
+    margin: 0 10px;
+    background-color: aqua;
+    color: black;
+    border-radius: 0.8em;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
 .btnLink:hover {
     transform: scale(1.1);
 }
@@ -37,7 +48,7 @@
 }
 
 .contentBlock {
-    padding: 40px;
+    padding: 30px;
     background: rgba(125, 125, 125, 0.2);
 }
 
@@ -53,6 +64,7 @@
 .listWithoutDots {
     list-style-type: none;
 }
+
 
 /* ############ -Tag modifier- ############ */
 * {
@@ -73,6 +85,22 @@ hr {
     margin: 10px 0;
     border: black 1px solid;
     align-self: stretch;
+}
+
+form {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+label>span {
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /* ############ -header- ############ */
@@ -213,11 +241,21 @@ footer div hr {
 #myProfile {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #myProfile .imgBox {
-    height: 150px;
-    width: 150px;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
 }
 
 
@@ -238,13 +276,36 @@ footer div hr {
 
 .textInputWithLabel {
     box-sizing: border-box;
-    width: 49%;
+    width: 50%;
+}
+
+.changeProfileInfo>* {
+    margin-bottom: 15px;
+}
+
+.inputSplitSmall {
+    box-sizing: border-box;
+    width: 1%;
+    flex: 1;
+}
+
+.inputSplitBig {
+    box-sizing: border-box;
+    margin-left: 3px;
+    width: 1%;
+    flex: 3;
+}
+
+
+.twoInputs {
+    width: 50%;
+    display: inline-flex;
 }
 
 
 
-
 @media(min-width:750px) {
+
     /* ############ -entry- ############ */
     #entry {
         display: flex;
@@ -271,7 +332,6 @@ footer div hr {
         display: flex;
         padding: 10px 10px;
         align-items: center;
-
     }
 
     .footerLink {
@@ -295,4 +355,6 @@ footer div hr {
         height: 2em;
         margin: auto 0;
     }
-} /* end media(min-width:750px) */
+}
+
+/* end media(min-width:750px) */
