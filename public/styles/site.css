@@ -1,50 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    line-height: 2em;
-}
-
-header,
-footer {
-    background-color: #008989;
-}
-
-header {
+/* ############ -utils- ############ */
+.center {
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-#innerLinks {
-    display: flex;
-    width: 400px;
-    height: 2em;
-    margin: auto 0;
-}
-
-#accManagement {
-    display: flex;
-    height: 2em;
-    margin: auto 0;
-}
-
-.navElement {
-    flex: 1;
-    height: 100%;
-    text-decoration: none;
-    color: black;
-}
-
-.navElement:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+    justify-content: center;
+    align-items: center;
 }
 
 .btnLink {
@@ -62,24 +20,53 @@ header {
     transform: scale(1.1);
 }
 
-.centerBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.textInput {
+    border: 0;
+    border-bottom: 1px solid black;
+    background: none;
 }
 
-footer {
-    display: flex;
-    padding: 10px 10px;
-    align-items: center;
+.imgBox {
+    height: 350px;
 }
 
-.footerIcons {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: center;
+.imgBox > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
+.contentBlock {
+    padding: 40px;
+    background: rgba(125, 125, 125, 0.2);
+}
+
+.searchBar {
+    width: 100%;
+}
+
+.contentList {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.listWithoutDots {
+    list-style-type: none;
+}
+
+/* ############ -Tag modifier- ############ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 2em;
 }
 
 hr {
@@ -88,9 +75,50 @@ hr {
     align-self: stretch;
 }
 
-.logo {
+/* ############ -header- ############ */
+header {
+    background-color: #008989;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header nav{
+    display: flex;
+    width: 400px;
+    height: 2em;
+    margin: auto 0;
+}
+
+header nav > * {
+    flex: 1;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+header nav > *:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.accManagement {
+    display: flex;
+    height: 2em;
+    margin: auto 0;
+}
+
+.header-logo {
     max-height: 50px;
     width: 50px;
+}
+
+/* ############ -footer- ############ */
+
+footer {
+    background-color: #008989;
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
 }
 
 .footerLink {
@@ -101,19 +129,19 @@ hr {
     justify-content: center;
 }
 
-#footerSocials {
+.footerIcons {
     display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
 }
 
-.footerLogo {
+.footer-logo {
     width: 150px;
 }
 
-.topicImg {
-    margin-right: 10px;
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
+.footerSocials {
+    display: flex;
 }
 
 .social {
@@ -125,37 +153,37 @@ hr {
     padding: 5px;
     box-sizing: border-box;
 }
+/* ############ -entry- ########### */
 
-.heroImg {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+#entry {
+    display: flex;
 }
 
-.contentBlock {
-    padding: 40px;
-    background: rgba(125, 125, 125, 0.2);
+#entry> * {
+    flex: 1 1 50%;
 }
 
-.heroImgWrapper {
-    height: 350px;
-}
-
-.profileImgWrapper {
-    height: 150px;
-    width: 150px;
-}
-
-#entryBlock>.heroImgWrapper {
+#entry .imgBox {
     height: 500px;
 }
 
-.profileWrapper {
-    display: flex;
-    padding: 50px;
+#entry .loginForm {
+    box-sizing: border-box;
+    padding-right: 100px;
 }
 
-#headings {
+#entry input {
+    margin-top: 12px;
+}
+
+/* ############ -main- ############ */
+
+#main .imgBox {
+    height: 350px;
+}
+
+/* TODO GRID angucken */
+.list-headings {
     display: flex;
     position: sticky;
     background-color: white;
@@ -163,26 +191,21 @@ hr {
     top: 0;
 }
 
-#headings h4:nth-child(1) {
+.list-headings h4:nth-child(1) {
     text-indent: 20px;
     width: 110px;
 }
 
-#headings p:nth-child(2) {
+.list-headings p:nth-child(2) {
     flex: 3;
 }
 
-#headings h4:nth-child(3) {
+.list-headings h4:nth-child(3) {
     flex: 3;
 }
 
-#headings h4:nth-child(4) {
+.list-headings h4:nth-child(4) {
     flex: 3;
-}
-
-.contentList {
-    height: 500px;
-    overflow-y: scroll;
 }
 
 .listElement {
@@ -193,6 +216,13 @@ hr {
 }
 
 .listElement div:nth-of-type(1) {
+    height: 100px;
+}
+
+.listElement .topicImg {
+    margin-right: 10px;
+    object-fit: cover;
+    width: 100px;
     height: 100px;
 }
 
@@ -211,21 +241,21 @@ hr {
     text-overflow: ellipsis;
 }
 
-#entryBlock {
+/* ############ -profile- ############ */
+
+#myProfile .imgBox {
+    height: 150px;
+    width: 150px;
+}
+
+#myProfile {
     display: flex;
 }
 
-#entryBlock>* {
-    flex: 1 1 50%;
-}
-
-#EntryBlock input {
-    display: block;
-    margin-top: 12px;
-}
 .inputLabel {
     display: inline;
 }
+
 .inputDesc {
     display: inline-block;
     width: 40%;
@@ -235,47 +265,17 @@ hr {
     margin-bottom: 15px;
 }
 
-.listWithoutDots {
-    padding-left: 30px;
-    list-style-type: none;
-}
 
 .textInputWithLabel {
     box-sizing: border-box;
     width: 49%;
 }
 
-#EntryBlock .textInput {
-    width: 100%;
-    border: 0;
-    border-bottom: 1px solid black;
-    background: none;
-}
 
-/* Box für PLZ und Stadt Eingabe*/
-#entryBlock .oneLineInput {
-    display: flex;
-    gap: 20px;
-}
-
-/* PLZ */
-#entryBlock .oneLineInput :nth-child(1) {
-    flex: 1 1 30%;
-}
-
-/* Stadt */
-#entryBlock .oneLineInput :nth-child(2) {
-    flex: 1 1 70%;
-}
-
-#entryBlock .loginForm {
-    box-sizing: border-box;
-    padding-right: 100px;
-}
 
 
 @media(max-width:750px) {
-    #entryBlock {
+    #entry {
         display: block;
     }
 
@@ -309,9 +309,7 @@ hr {
         display: none;
     }
 
-    #searchBar {
-        width: 100%;
-    }
+
 
     #toTop {
         display: none;
@@ -338,7 +336,7 @@ hr {
         margin-top: 20px;
     }
 
-    #innerLinks {
+    header nav {
         display: none;
     }
 

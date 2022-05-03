@@ -1,12 +1,12 @@
 <header>
-    <a class="logo" href="/main"><img src={{ global.logoURL }} alt="LOGO"></a>
-    <nav id="innerLinks">
+    <a class="header-logo logo" href="/main"><img src={{ global.logoURL }} alt="LOGO"></a>
+    <nav>
         {{#each page.innerlinks}}
-        <a class="centerBox navElement" href={{ this.url }}>{{ this.title }}</a>
+        <a class="center" href={{ this.url }}>{{ this.title }}</a>
         {{/each}}
     </nav>
-    <div id="accManagement">
-        <a class="centerBox btnLink" href="/entry/register">Registrieren</a>
-        <a class="centerBox btnLink" href="/entry/login">Login</a>
+    <div class="accManagement">
+        <a class="center btnLink" href="/entry/register">Registrieren</a>
+        <a class="center btnLink" href="/entry/login">Login</a>
     </div>
 </header>
