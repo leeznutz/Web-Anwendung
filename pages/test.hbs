@@ -4,35 +4,43 @@
 "template": "_layout",
 }
 ---
-<div class="container">
-    <div class="grid">
-        <div class="title">Titel
+<section class="contentBlock">
+    <div class="group-list">
+        <div class="headings">
+            <h4 class="headings-title">Titel
+            </h4>
+            <h4 class="headings-reviews">Reviews
+            </h4>
+            <h4 class="headings-lastMsg">Letzte Nachricht
+            </h4>
         </div>
-        <div class="reviews">Reviews
-        </div>
-        <div class="lastMsg">Letzte Nachricht
-        </div>
+        <article class="element">
+            <div class="imgBox element-image">
+                <img src={{ global.imgListElement }} alt="Gruppenbild">
+            </div>
+            <h4 class="element-title"> Titel </h4>
+            <p class="element-reviews"> Anzahl: 2 </p>
+            <div class="element-lastMsg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ut dicta quaerat quasi repudiandae, quisquam veritatis sapiente, totam eum vitae, voluptatum iure dolore porro consectetur eveniet nam odit repellat nemo. </div>
+        </article>
+        <article class="element">
+            <div class="imgBox element-image">
+                <img src={{ global.imgListElement }} alt="Gruppenbild">
+            </div>
+            <h4 class="element-title"> Titel </h4>
+            <p class="element-reviews"> Anzahl: 2 </p>
+            <div class="element-lastMsg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ut dicta quaerat quasi
+                repudiandae, quisquam veritatis sapiente, totam eum vitae, voluptatum iure dolore porro consectetur eveniet nam
+                odit repellat nemo. </div>
+        </article>
+        <article class="element">
+            <div class="imgBox element-image">
+                <img src={{ global.imgListElement }} alt="Gruppenbild">
+            </div>
+            <h4 class="element-title"> Titel </h4>
+            <p class="element-reviews"> Anzahl: 2 </p>
+            <div class="element-lastMsg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ut dicta quaerat quasi
+                repudiandae, quisquam veritatis sapiente, totam eum vitae, voluptatum iure dolore porro consectetur eveniet nam
+                odit repellat nemo. </div>
+        </article>
     </div>
-    <div class="element">
-        <div class="element-image"> IMAGE </div>
-        <div class="element-title"> Title </div>
-        <div class="element-reviews"> Anzahl: 2 </div>
-        <div class="element-lastMsg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ut dicta quaerat quasi repudiandae, quisquam veritatis sapiente, totam eum vitae, voluptatum iure dolore porro consectetur eveniet nam odit repellat nemo. </div>
-    </div>
-    <div class="element">
-        <div class="element-image"> IMAGE </div>
-        <div class="element-title"> Title </div>
-        <div class="element-reviews"> Anzahl: 2 </div>
-        <div class="element-lastMsg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ut dicta quaerat quasi
-            repudiandae, quisquam veritatis sapiente, totam eum vitae, voluptatum iure dolore porro consectetur eveniet nam
-            odit repellat nemo. </div>
-    </div>
-    <div class="element">
-        <div class="element-image"> IMAGE </div>
-        <div class="element-title"> Title </div>
-        <div class="element-reviews"> Anzahl: 2 </div>
-        <div class="element-lastMsg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ut dicta quaerat quasi
-            repudiandae, quisquam veritatis sapiente, totam eum vitae, voluptatum iure dolore porro consectetur eveniet nam
-            odit repellat nemo. </div>
-    </div>
-</div>
+</section>
