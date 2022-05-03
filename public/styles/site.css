@@ -210,14 +210,16 @@ footer div hr {
 
 /* ############ -profile- ############ */
 
+#myProfile {
+    display: flex;
+    flex-direction: column;
+}
+
 #myProfile .imgBox {
     height: 150px;
     width: 150px;
 }
 
-#myProfile {
-    display: flex;
-}
 
 .inputLabel {
     display: inline;
