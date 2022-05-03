@@ -30,7 +30,7 @@
     height: 350px;
 }
 
-.imgBox > img {
+.imgBox>img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -83,21 +83,18 @@ header {
     padding: 10px;
 }
 
-header nav{
-    display: flex;
-    width: 400px;
-    height: 2em;
-    margin: auto 0;
+header nav {
+    display: none;
 }
 
-header nav > * {
+header nav>* {
     flex: 1;
     height: 100%;
     text-decoration: none;
     color: black;
 }
 
-header nav > *:hover {
+header nav>*:hover {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -113,12 +110,11 @@ header nav > *:hover {
 }
 
 /* ############ -footer- ############ */
-
 footer {
     background-color: #008989;
-    display: flex;
     padding: 10px 10px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footerLink {
@@ -153,15 +149,23 @@ footer {
     padding: 5px;
     box-sizing: border-box;
 }
+
+#toTop {
+    display: none;
+}
+
+footer div hr {
+    margin-top: 20px;
+}
+
+
 /* ############ -entry- ########### */
 
 #entry {
-    display: flex;
+    display: block;
 }
 
-#entry> * {
-    flex: 1 1 50%;
-}
+
 
 #entry .imgBox {
     height: 500px;
@@ -184,11 +188,7 @@ footer {
 
 /* TODO GRID angucken */
 .list-headings {
-    display: flex;
-    position: sticky;
-    background-color: white;
-    padding-bottom: 10px;
-    top: 0;
+    display: none;
 }
 
 .list-headings h4:nth-child(1) {
@@ -206,39 +206,6 @@ footer {
 
 .list-headings h4:nth-child(4) {
     flex: 3;
-}
-
-.listElement {
-    display: flex;
-    align-items: center;
-    border: 2px black solid;
-    padding: 10px;
-}
-
-.listElement div:nth-of-type(1) {
-    height: 100px;
-}
-
-.listElement .topicImg {
-    margin-right: 10px;
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
-}
-
-.listElement .topicTitle {
-    flex: 3;
-}
-
-.listElement .topicReacts {
-    flex: 3;
-}
-
-.listElement .topicText {
-    flex: 3;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 /* ############ -profile- ############ */
@@ -261,6 +228,7 @@ footer {
     width: 40%;
     text-align: right;
 }
+
 .inputRow {
     margin-bottom: 15px;
 }
@@ -274,49 +242,35 @@ footer {
 
 
 
-@media(max-width:750px) {
+@media(min-width:750px) {
+
+    /* ############ -entry- ############ */
     #entry {
-        display: block;
+        display: flex;
     }
 
-    .listElement {
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        height: calc(100px + 2em);
+    #entry>* {
+        flex: 1 1 50%;
     }
 
-    .listElement .topicReacts {
-        padding-top: 5px;
-        padding-left: 25px;
-        order: 2;
-    }
-
-    .listElement .topicTitle {
-        margin-top: 20px;
-        flex: 1;
-        order: 3;
-    }
-
-    .listElement .topicText {
-        flex: 2;
-        width: 100%;
-        order: 4;
-    }
+    /* ############ -main- ############ */
 
     #headings {
-        display: none;
+        display: flex;
+        position: sticky;
+        background-color: white;
+        padding-bottom: 10px;
+        top: 0;
     }
 
-
-
-    #toTop {
-        display: none;
-    }
+    /* ############ -footer- ############ */
 
     footer {
-        flex-wrap: wrap;
+        background-color: #008989;
+        display: flex;
+        padding: 10px 10px;
+        align-items: center;
+
     }
 
     .footerLink {
@@ -329,18 +283,15 @@ footer {
         order: 2;
     }
 
-    /*
-        die Linie soll im kleinen Modus mehr Abstand zu den Buttons haben
-    */
     footer div hr {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
+    /* ############ -header- ############# */
     header nav {
-        display: none;
-    }
-
-    #interaction {
-        justify-content: flex-end;
+        display: flex;
+        width: 400px;
+        height: 2em;
+        margin: auto 0;
     }
 }
