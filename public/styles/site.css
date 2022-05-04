@@ -27,6 +27,7 @@
     transition: transform 0.2s;
 }
 
+
 .btnLink:hover {
     transform: scale(1.1);
 }
@@ -84,11 +85,7 @@ hr {
     align-self: stretch;
 }
 
-form {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 100%;
-}
+
 
 label>span {
     padding-right: 5px;
@@ -96,10 +93,8 @@ label>span {
 }
 
 form h4 {
-    margin-top: 15px;
     margin-bottom: 15px;
 }
-
 /* ############ -header- ############ */
 header {
     background-color: #008989;
@@ -256,6 +251,7 @@ footer div hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 #myProfile .imgBox {
@@ -286,6 +282,7 @@ footer div hr {
 
 .changeProfileInfo>* {
     margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .inputSplitSmall {
@@ -305,6 +302,26 @@ footer div hr {
 .twoInputs {
     width: 50%;
     display: inline-flex;
+}
+
+.profileHead {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileContent{
+    display: flex;
+    flex-direction: column;
+}
+#myProfile ul{
+    margin-bottom: 50px;
+}
+#myProfile .imgBox > img{
+    border-radius: 15px;
 }
 
 /* ############ -test- ############ */
@@ -475,6 +492,37 @@ footer div hr {
         height: 2em;
         margin: auto 0;
     }
+
+    /* ############ -profile- ############# */
+    .profileContent{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #myProfile .imgBox {
+        width: 165px;
+        height: 165px;
+    }
+    .profileImg {
+        margin-right: 15vw;
+        justify-content: flex-start;
+    }
+    .inputDesc {
+        width: 30%;
+    }
+    .textInputWithLabel {
+        width: 60%;
+    }
+    .twoInputs {
+        width: 60%;
+    }
+    .changeProfileInfo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
 }
 
 /* end media(min-width:750px) */
