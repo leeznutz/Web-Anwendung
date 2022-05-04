@@ -254,7 +254,7 @@ footer div hr {
     margin-bottom: 30px;
 }
 
-#myProfile .imgBox {
+#profile .imgBox {
     width: 250px;
     height: 250px;
     margin-bottom: 20px;
@@ -278,6 +278,12 @@ footer div hr {
 .textInputWithLabel {
     box-sizing: border-box;
     width: 50%;
+}
+
+.changeProfileInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .changeProfileInfo>* {
@@ -315,13 +321,27 @@ footer div hr {
 
 .profileContent{
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
-#myProfile ul{
+#profile ul{
     margin-bottom: 50px;
 }
-#myProfile .imgBox > img{
+#profile .imgBox > img{
     border-radius: 15px;
+}
+
+
+
+/* ############ -otherProfile- ############ */
+.infoRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.profileInfo {
+    width: 300px;
 }
 
 /* ############ -test- ############ */
@@ -493,13 +513,13 @@ footer div hr {
         margin: auto 0;
     }
 
-    /* ############ -profile- ############# */
+    /* ############ -myProfile- ############# */
     .profileContent{
         flex-direction: row;
         width: 100%;
     }
 
-    #myProfile .imgBox {
+    #profile .imgBox {
         width: 165px;
         height: 165px;
     }
@@ -517,11 +537,11 @@ footer div hr {
         width: 60%;
     }
     .changeProfileInfo {
-        display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
     }
+    /* ############ -otherProfile- ############ */
 
 }
 

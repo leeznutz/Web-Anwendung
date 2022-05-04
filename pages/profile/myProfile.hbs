@@ -1,93 +1,97 @@
 ---
 {
-"title": "mainPage",
+"title": "myProfile",
 "template": "_layout",
 }
 ---
 <div id="myProfile" class="contentBlock">
-    <div class="profileHead">
-        <h2>Dein Profil</h2>
-        <a class="center btnLink" href="/main">zurück</a>
-    </div>
-    <div class="profileContent">
-        <div class="profileImg">
-            <div class="imgBox">
-                <img src={{ global.heroImgMain }} alt="big_Image">
-            </div>
-            <a class="center btnLink" href="/main">ändern</a>
+    <div id="profile">
+        <div class="profileHead">
+            <h2>Dein Profil</h2>
+            <a class="center btnLink" href="/main">zurück</a>
         </div>
-        <form>
-            <ul class="listWithoutDots">
-                <li>
-                    <ul class="listWithoutDots">
-                        <li>
-                            <h4>Dein Account</h4>
-                        </li>
-                        <li class="inputRow">
-                            <label class="inputLabel">
-                                <span class="inputDesc">Nutzername</span>
-                                <input class="textInputWithLabel" type="text" name="username" placeholder="Nutzername">
-                            </label>
-                        </li>
-                        <li class="inputRow">
-                            <label class="inputLabel">
-                                <span class="inputDesc">E-Mail-Adresse</span>
-                                <input class="textInputWithLabel" type="email" name="e-mail"
-                                    placeholder="E-Mail-Adresse">
-                            </label>
-                        </li>
-                        <li class="inputRow">
-                            <label class="inputLabel">
-                                <span class="inputDesc">Passwort</span>
-                                <input class="textInputWithLabel" type="password" name="password"
-                                    placeholder="Passwort">
-                            </label>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="listWithoutDots">
-                        <li>
-                            <h4>Deine Informationen</h4>
-                        </li>
-                        <li class="inputRow">
-                            <label class="inputLabel">
-                                <span class="inputDesc">Vorname</span>
-                                <input class="textInputWithLabel" type="text" name="firstName" placeholder="Vorname">
-                            </label>
-                        </li>
-                        <li class="inputRow">
-                            <label class="inputLabel">
-                                <span class="inputDesc">Nachname</span>
-                                <input class="textInputWithLabel" type="text" name="lastName" placeholder="Nachname">
-                            </label>
-                        </li>
-                        <li class="inputRow">
-                            <label class="inputLabel">
-                                <span class="inputDesc">Stadt</span>
-                            </label>
-                            <div class="twoInputs">
-                                <input class="inputSplitSmall" type="text" name="city" placeholder="PLZ">
-                                <input class="inputSplitBig" type="text" name="city" placeholder="Stadt">
-                            </div>
-                        </li>
-                        <li class="inputRow">
-                            <label class="inputLabel">
-                                <span class="inputDesc">Straße + Haus-Nr.</span>
-                                <input class="textInputWithLabel" type="text" name="password"
-                                    placeholder="Straße + Haus-Nr.">
-                            </label>
-                        </li>
-                    </ul>
-                </li>
+        <div class="profileContent">
+            <div class="profileImg">
+                <div class="imgBox">
+                    <img src={{ global.heroImgMain }} alt="big_Image">
+                </div>
+                <a class="center btnLink" href="/main">ändern</a>
+            </div>
+            <form>
+                <ul class="listWithoutDots">
+                    <li>
+                        <ul class="listWithoutDots">
+                            <li>
+                                <h4>Dein Account</h4>
+                            </li>
+                            <li class="inputRow">
+                                <label class="inputLabel">
+                                    <span class="inputDesc">Nutzername</span>
+                                    <input class="textInputWithLabel" type="text" name="username"
+                                        placeholder="Nutzername">
+                                </label>
+                            </li>
+                            <li class="inputRow">
+                                <label class="inputLabel">
+                                    <span class="inputDesc">E-Mail-Adresse</span>
+                                    <input class="textInputWithLabel" type="email" name="e-mail"
+                                        placeholder="E-Mail-Adresse">
+                                </label>
+                            </li>
+                            <li class="inputRow">
+                                <label class="inputLabel">
+                                    <span class="inputDesc">Passwort</span>
+                                    <input class="textInputWithLabel" type="password" name="password"
+                                        placeholder="Passwort">
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="listWithoutDots">
+                            <li>
+                                <h4>Deine Informationen</h4>
+                            </li>
+                            <li class="inputRow">
+                                <label class="inputLabel">
+                                    <span class="inputDesc">Vorname</span>
+                                    <input class="textInputWithLabel" type="text" name="firstName"
+                                        placeholder="Vorname">
+                                </label>
+                            </li>
+                            <li class="inputRow">
+                                <label class="inputLabel">
+                                    <span class="inputDesc">Nachname</span>
+                                    <input class="textInputWithLabel" type="text" name="lastName"
+                                        placeholder="Nachname">
+                                </label>
+                            </li>
+                            <li class="inputRow">
+                                <label class="inputLabel">
+                                    <span class="inputDesc">Stadt</span>
+                                </label>
+                                <div class="twoInputs">
+                                    <input class="inputSplitSmall" type="text" name="city" placeholder="PLZ">
+                                    <input class="inputSplitBig" type="text" name="city" placeholder="Stadt">
+                                </div>
+                            </li>
+                            <li class="inputRow">
+                                <label class="inputLabel">
+                                    <span class="inputDesc">Straße + Haus-Nr.</span>
+                                    <input class="textInputWithLabel" type="text" name="password"
+                                        placeholder="Straße + Haus-Nr.">
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
 
-            </ul>
-        </form>
+                </ul>
+            </form>
+        </div>
+        <div class="changeProfileInfo">
+            <a class="center bigBtnLink" href="/main">Änderung speichern</a>
+            <a class="center bigBtnLink" href="/main">Änderung verwerfen</a>
+            <a class="center bigBtnLink" href="/main">Profil löschen</a>
+        </div>
     </div>
-    <div class="changeProfileInfo">
-        <a class="center bigBtnLink" href="/main">Änderung speichern</a>
-        <a class="center bigBtnLink" href="/main">Änderung verwerfen</a>
-        <a class="center bigBtnLink" href="/main">Profil löschen</a>
-    </div>
-
 </div>
