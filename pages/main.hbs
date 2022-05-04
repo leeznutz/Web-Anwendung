@@ -4,31 +4,55 @@
 "template": "_layout",
 }
 ---
-<div id="main">
-    <div class="imgBox">
-        <img src={{ global.heroImgMain }} alt="big_Image">
-    </div>
-    <div class="contentBlock">
-        <input class="searchBar" type="text" placeholder="Suche">
-        <div class="contentBlock">
-            <div class="contentList">
-                <div class="list-headings">
-                    <h4>Thema</h4>
-                    <p></p>
-                    <h4>Reaktion</h4>
-                    <h4>Letzte Nachricht</h4>
+<div class="contentBlock">
+    <input class="bigSearchBar" type="text" placeholder="Suche">
+    <div id="main">
+        <div class="functions">
+            <div class="functionElement">
+                <p class="center">Gruppen</p>
+                <div class="imgBox">
+                    <img src={{ global.imgListElement }} alt="">
                 </div>
-                <div class="listElement">
-                    <div>
-                        <img class="topicImg" src={{ global.imgListElement }} alt="Themenbild">
+            </div>
+            <div class="functionElement">
+                <p class="center">Kontakte</p>
+                <div class="imgBox">
+                    <img src={{ global.imgListElement }} alt="">
+                </div>
+            </div>
+            <div class="functionElement">
+                <p class="center">Lernen</p>
+                <div class="imgBox">
+                    <img src={{ global.imgListElement }} alt="">
+                </div>
+            </div>
+        </div>
+        <div class="functions2">
+            <div class="bigFunctionElement">
+                <p class="center">Mein Wörterbuch</p>
+                <div class="imgBox">
+                    <img src={{ global.imgListElement }} alt="">
+                </div>
+            </div>
+        </div>
+        <div class="create">
+            <div class="functions3">
+                <hr>
+                <p>Erstellen</p>
+                <hr>
+            </div>
+            <div class="functions">
+                <div class="functionElement">
+                    <p class="center">Gebärden</p>
+                    <div class="imgBox">
+                        <img src={{ global.imgListElement }} alt="">
                     </div>
-                    <h5 class="topicTitle">Überschrift</h5>
-                    <p class="topicReacts">Anzahl</p>
-                    <p class="topicText">Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Veniam voluptatibus, error cupiditate dignissimos, quaerat quasi hic
-                        voluptates et
-                        officiis accusantium numquam pariatur fugiat, adipisci maiores architecto nam illo quam. Veniam!
-                    </p>
+                </div>
+                <div class="functionElement">
+                    <p class="center">Gruppe</p>
+                    <div class="imgBox">
+                        <img src={{ global.imgListElement }} alt="">
+                    </div>
                 </div>
             </div>
         </div>
