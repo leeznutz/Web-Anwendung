@@ -1,3 +1,25 @@
 ---
 "template": "_layout"
 ---
+<div id="profile" class="contentBlock">
+    <div class="profileHead">
+        <h2>{{#if page.myProfile }}Dein Profil
+            {{else}}Profil von {{page.firstName}}
+            {{/if}}</h2>
+        <a class="center btnLink" href="/main">zurück</a>
+    </div>
+    <div class="profileContent">
+        <div class="profileImg">
+            <div class="imgBox">
+                <img src={{ global.heroImgMain }} alt="big_Image">
+            </div>
+            {{#if page.myProfile }}<a class="center btnLink" href="/main">ändern</a>{{/if}}
+        </div>
+        {{ content }}
+    </div>
+    <div class="changeProfileInfo">
+        <a class="center bigBtnLink" href="/main">{{ page.firstButton }}</a>
+        <a class="center bigBtnLink" href="/main">{{ page.secondButton }}</a>
+        <a class="center bigBtnLink" href="/main">{{ page.thirdButton }}</a>
+    </div>
+</div>

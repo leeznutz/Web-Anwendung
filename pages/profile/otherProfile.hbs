@@ -1,54 +1,38 @@
 ---
 {
 "title": "otherProfile",
-"template": "_layout",
+"template": "_profileLayout",
 "username": "Schmitti",
 "firstName": "Hans",
 "lastName": "Schmidt",
 "plz": "22767",
-"city": "Hamburg"
+"city": "Hamburg",
+"firstButton": "Profil melden",
+"secondButton": "Profil Ignorieren",
+"thirdButton": "Chatnachricht senden",
+"myProfile": false
 }
 ---
-<div id="otherProfile" class="contentBlock">
-    <div id="profile">
-        <div class="profileHead">
-            <h2>Profil von {{ page.firstName }}</h2>
-            <a class="center btnLink" href="/main">zurück</a>
-        </div>
-        <div class="profileContent">
-            <div class="profileImg">
-                <div class="imgBox">
-                    <img src={{ global.heroImgMain }} alt="big_Image">
-                </div>
-            </div>
-            <article class="profileInfo">
-                <ul class="listWithoutDots">
-                    <li>
-                        <h4>Dein Account</h4>
-                    </li>
-                    <li class="infoRow">
-                        <span>Nutzername</span>
-                        <span>{{ page.username }}</span>
-                    </li>
-                    <li class="infoRow">
-                        <span>Vorname</span>
-                        <span>{{ page.firstName }}</span>
-                    </li>
-                    <li class="infoRow">
-                        <span>Nachname</span>
-                        <span>{{ page.lastName }}</span>
-                    </li>
-                    <li class="infoRow">
-                        <span>PLZ / Stadt</span>
-                        <span>{{ page.plz }} {{ page.city }}</span>
-                    </li>
-                </ul>
-            </article>
-        </div>
-        <div class="changeProfileInfo">
-            <a class="center bigBtnLink" href="/main">Profil melden</a>
-            <a class="center bigBtnLink" href="/main">Profil Ignorieren</a>
-            <a class="center bigBtnLink" href="/main">Chatnachricht senden</a>
-        </div>
-    </div>
-</div>
+<article class="profileInfo">
+    <ul class="listWithoutDots">
+        <li>
+            <h4>Dein Account</h4>
+        </li>
+        <li class="infoRow">
+            <span>Nutzername</span>
+            <span>{{ page.username }}</span>
+        </li>
+        <li class="infoRow">
+            <span>Vorname</span>
+            <span>{{ page.firstName }}</span>
+        </li>
+        <li class="infoRow">
+            <span>Nachname</span>
+            <span>{{ page.lastName }}</span>
+        </li>
+        <li class="infoRow">
+            <span>PLZ / Stadt</span>
+            <span>{{ page.plz }} {{ page.city }}</span>
+        </li>
+    </ul>
+</article>
