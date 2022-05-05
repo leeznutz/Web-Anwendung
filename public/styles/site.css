@@ -17,7 +17,7 @@
 }
 
 .bigBtnLink {
-    width: 150px;
+    width: 200px;
     height: 2em;
     margin: 0 10px;
     background-color: aqua;
@@ -64,6 +64,18 @@
 
 .listWithoutDots {
     list-style-type: none;
+}
+
+.align-self-end {
+    justify-self: end;
+}
+
+.marginR15 {
+    margin-right: 15px;
+}
+
+.marginL15 {
+    margin-left: 15px;
 }
 
 
@@ -401,7 +413,7 @@ footer div hr {
     position: sticky;
     top: 0;
 
-    grid-template: "title title reviews lastMsg"auto / 160px 1fr 1fr 1fr;
+    grid-template: auto / 160px 1fr 1fr 1fr;
 
     background: firebrick;
 }
@@ -476,7 +488,7 @@ footer div hr {
     }
 
     .element {
-        grid: "image title reviews lastMsg"160px / 160px 1fr 1fr 1fr;
+        grid: 160px / 160px 1fr 1fr 1fr;
     }
 
     .element-image {
@@ -501,7 +513,104 @@ footer div hr {
 /*#####  test ende ##### */
 
 
+/* ############ -groupchat- ############ */
 
+#groupchat {
+    display: flex;
+    flex-direction: column;
+}
+
+#groupchat .chatHeader .imgBox {
+    width: 90px;
+    height: 90px;
+}
+
+#groupchat .chatHeader .imgBox img {
+    border-radius: 8px;
+}
+
+#groupchat .chat .imgBox {
+    width: 60px;
+    height: 60px;
+}
+#groupchat .chat .imgBox img {
+    border-radius: 8px;
+}
+.chatText {
+    padding: 5px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.chatHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.chat-name-back {
+    padding-left: 15px;
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.empty {
+    display: none;
+    width: 80px;
+}
+
+.sender h5 {
+    width: 100%;
+    word-break: break-all;
+}
+.sender {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    box-sizing: border-box;
+    max-width: 60px;
+    min-width: 60px;
+}
+
+.chat {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatEntry {
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.interact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.interact .imgBox {
+    padding-left: 5px;
+    width: 20px;
+    height: 20px;
+}
+.interact .imgBox img {
+    border-radius: 80%;
+}
+
+.writeChat {
+    width: 80%;
+}
+
+/* ############ -groupchat ende- ############ */
 
 
 @media(min-width:750px) {
@@ -520,6 +629,7 @@ footer div hr {
     #main {
         flex-direction: row;
     }
+
     .functionElement {
         width: 60%;
         margin-bottom: 0;
@@ -529,6 +639,7 @@ footer div hr {
         flex-direction: column;
         align-items: center;
     }
+
     .align-start {
         align-items: start;
     }
@@ -536,9 +647,11 @@ footer div hr {
     .createFunctions {
         flex-direction: column;
     }
+
     .bigFunctionElement {
         width: 80%;
     }
+
     /* ############ -footer- ############ */
 
     footer {
@@ -611,7 +724,11 @@ footer div hr {
         justify-content: space-around;
     }
 
-
+    /* ############ -groupchat- ############ */
+    .empty {
+        min-width: 75px;
+        display: unset;
+    }
 
 }
 

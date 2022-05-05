@@ -4,5 +4,6 @@
     "socials2": "../public/images/instagram.jpg",
     "socials3": "../public/images/twitter.jpg",
     "heroImgMain": "https://picsum.photos/1600/720",
-    "imgListElement": "https://picsum.photos/400/200"
+    "imgListElement": "https://picsum.photos/400/200",
+    "sendButton": "../public/images/send.jpg"
 }
