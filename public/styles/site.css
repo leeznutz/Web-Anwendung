@@ -224,9 +224,10 @@ footer div hr {
     align-items: center;
 }
 
-.create {
+.createHeader {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 #main .imgBox {
@@ -234,52 +235,53 @@ footer div hr {
     height: 100%;
 }
 
-#main .imgBox>img {
-    border-radius: 10px;
-}
-
 .functions {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-.functions2 {
+.mainFunction {
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
-.functions3 {
+.createBox {
+    box-sizing: border-box;
+    background-color: #547e7e;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    opacity: 0.7;
+    border-radius: 4px;
 }
 
 .functionElement {
-    border-radius: 10px;
     width: 25%;
-    aspect-ratio: 3 / 2;
-    padding: 3px;
-    background-color: blue;
-    border: 3px solid black;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: rgb(106, 213, 255);
+    border: 1px solid black;
     margin-top: 20px;
     margin-bottom: 20px;
+    transition: transform 0.2s;
 }
 
 .bigFunctionElement {
-    border-radius: 10px;
-    width: 50%;
-    aspect-ratio: 3 / 2;
-    padding: 3px;
-    background-color: blue;
-    border: 3px solid black;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 60%;
+}
+
+.functionElement:hover {
+    transform: scale(1.02);
 }
 
 /* ############ -profile- ############ */
@@ -514,14 +516,29 @@ footer div hr {
     }
 
     /* ############ -main- ############ */
+
     #main {
         flex-direction: row;
+    }
+    .functionElement {
+        width: 60%;
+        margin-bottom: 0;
     }
 
     .functions {
         flex-direction: column;
+        align-items: center;
+    }
+    .align-start {
+        align-items: start;
     }
 
+    .createFunctions {
+        flex-direction: column;
+    }
+    .bigFunctionElement {
+        width: 80%;
+    }
     /* ############ -footer- ############ */
 
     footer {
