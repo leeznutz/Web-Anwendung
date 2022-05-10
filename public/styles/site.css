@@ -445,12 +445,12 @@ footer div hr {
 
     display: grid;
 
-    grid: 80px 80px auto / 160px 1fr;
-    grid-template-areas:
-     "image title"
-     "image lastMsg"
-     "reviews ."
-    ;
+    grid: 
+        "image title  " 80px 
+        "image lastMsg" 80px 
+        "reviews .    " auto 
+        / 160px 1fr;
+
     align-items: center;
 }
 
@@ -490,8 +490,8 @@ footer div hr {
     }
 
     .element {
-        grid: 160px / 160px 1fr 1fr 1fr;
-        grid-template-areas: "image title reviews lastMsg";
+        grid: "image title reviews lastMsg" 160px 
+        / 160px 1fr 1fr 1fr;
     }
 
     .element-reviews {
