@@ -444,11 +444,8 @@ footer div hr {
 
     display: grid;
 
-    grid: 
-        "image title  " 80px 
-        "image lastMsg" 80px 
-        "reviews .    " auto 
-        / 160px 1fr;
+    grid:
+        "image title  " 80px "image lastMsg" 80px "reviews .    " auto / 160px 1fr;
 
     align-items: center;
 }
@@ -456,7 +453,7 @@ footer div hr {
 .element-image {
     height: 100%;
     box-sizing: border-box;
-    padding: 10px;  
+    padding: 10px;
     grid-area: image;
 }
 
@@ -475,11 +472,11 @@ footer div hr {
 
 .element-lastMsg {
     grid-area: lastMsg;
-    
+
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    
+
     align-self: flex-start;
 }
 
@@ -489,8 +486,7 @@ footer div hr {
     }
 
     .element {
-        grid: "image title reviews lastMsg" 160px 
-        / 160px 1fr 1fr 1fr;
+        grid: "image title reviews lastMsg" 160px / 160px 1fr 1fr 1fr;
     }
 
     .element-reviews {
@@ -534,7 +530,7 @@ footer div hr {
     height: 90px;
 }
 
-#groupView .groupHeader .imgBox img {
+.groupImg {
     border-radius: 8px;
 }
 
@@ -542,9 +538,11 @@ footer div hr {
     width: 60px;
     height: 60px;
 }
+
 #groupView .chat .imgBox img {
     border-radius: 8px;
 }
+
 .chatText {
     padding: 5px;
     border-width: 1px;
@@ -559,17 +557,17 @@ footer div hr {
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
-    opacity: 0.8;
 }
 
 .chat-name-back {
     padding-left: 15px;
     display: flex;
-    flex:1;
+    flex: 1;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
+
 .empty {
     display: none;
     width: 80px;
@@ -579,6 +577,7 @@ footer div hr {
     width: 100%;
     word-break: break-all;
 }
+
 .sender {
     display: flex;
     flex-direction: column;
@@ -606,11 +605,13 @@ footer div hr {
     flex-direction: row;
     justify-content: center;
 }
+
 .interact .imgBox {
     padding-left: 5px;
     width: 20px;
     height: 20px;
 }
+
 .interact .imgBox img {
     border-radius: 80%;
 }
@@ -622,36 +623,42 @@ footer div hr {
 .participans {
     height: 2em;
 }
-  
-  
-  .dropdown-content {
+
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
     z-index: 1;
-  }
-  
-  .dropdown-content >* {
+}
+
+.dropdown-content>* {
     color: black;
     padding: 8px 8px;
     text-decoration: none;
     display: block;
-  }
-  
-  .dropdown-content .contact:hover {background-color: #f1f1f1}
-  
+}
 
-  .contact {
-      display: flex;
-      align-items: center;
-  }
-  .contact > img {
-      height: 3em;
-      width: 3em;
-      padding-right: 10px;
-  }
+.dropdown-content .contact:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}  
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+#groupView .groupHeader .contact .imgBox{
+    height: 3em;
+    width: 3em;
+    padding-right: 10px;
+}
 
 /* ############ -groupchat ende- ############ */
 
@@ -776,6 +783,6 @@ footer div hr {
         min-width: 75px;
         display: unset;
     }
-    }
+}
 
 /* end media(min-width:750px) */
