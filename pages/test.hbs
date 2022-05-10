@@ -2,6 +2,35 @@
 {
 "title": "test",
 "template": "_layout",
+
+"groups": [
+    {
+        "image": "https://picsum.photos/400/200",
+        "title": "Hallo",
+        "reviews": "2",
+        "lastMsg": "lorem ipsum dolor sit amet consectetur adipisicing elit euismod er"
+    },
+    {
+        "image": "https://picsum.photos/400/200",
+        "title": "Wir sinds",
+        "reviews": "4",
+        "lastMsg": "lorem ipsum dolor sit amet consectetur adipisicing elit euismod er"
+    },
+    {
+        "image": "https://picsum.photos/400/200",
+        "title": "TITEL",
+        "reviews": "5",
+        "lastMsg": "lorem ipsum dolor sit amet consectetur adipisicing elit euismod er"
+    },
+    {
+        "image": "https://picsum.photos/400/200",
+        "title": "Die letzte Gruppe",
+        "reviews": "27",
+        "lastMsg": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ut dicta quaerat quasi
+                repudiandae, quisquam veritatis sapiente, totam eum vitae, voluptatum iure dolore porro consectetur eveniet nam
+                odit repellat nemo."
+    },
+    ]
 }
 ---
 <section class="contentBlock">
@@ -14,33 +43,15 @@
             <h4 class="headings-lastMsg">Letzte Nachricht
             </h4>
         </div>
+        {{#each page.groups}}
         <article class="element">
             <div class="imgBox element-image">
-                <img src={{ global.imgListElement }} alt="Gruppenbild">
+                <img src={{ this.image }} alt="Gruppenbild">
             </div>
-            <h4 class="element-title"> Titel </h4>
-            <p class="element-reviews"> Anzahl: 2 </p>
-            <div class="element-lastMsg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ut dicta quaerat quasi repudiandae, quisquam veritatis sapiente, totam eum vitae, voluptatum iure dolore porro consectetur eveniet nam odit repellat nemo. </div>
+            <h4 class="element-title">{{ this.title }}</h4>
+            <p class="element-reviews">Anzahl: {{ this.reviews}}</p>
+            <div class="element-lastMsg">{{ this.lastMsg }}</div>
         </article>
-        <article class="element">
-            <div class="imgBox element-image">
-                <img src={{ global.imgListElement }} alt="Gruppenbild">
-            </div>
-            <h4 class="element-title"> Titel </h4>
-            <p class="element-reviews"> Anzahl: 2 </p>
-            <div class="element-lastMsg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ut dicta quaerat quasi
-                repudiandae, quisquam veritatis sapiente, totam eum vitae, voluptatum iure dolore porro consectetur eveniet nam
-                odit repellat nemo. </div>
-        </article>
-        <article class="element">
-            <div class="imgBox element-image">
-                <img src={{ global.imgListElement }} alt="Gruppenbild">
-            </div>
-            <h4 class="element-title"> Titel </h4>
-            <p class="element-reviews"> Anzahl: 2 </p>
-            <div class="element-lastMsg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ut dicta quaerat quasi
-                repudiandae, quisquam veritatis sapiente, totam eum vitae, voluptatum iure dolore porro consectetur eveniet nam
-                odit repellat nemo. </div>
-        </article>
+        {{/each}}
     </div>
 </section>
