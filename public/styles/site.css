@@ -70,12 +70,16 @@
     justify-self: end;
 }
 
-.marginR15 {
+.mr-s {
     margin-right: 15px;
 }
 
-.marginL15 {
+.ml-s {
     margin-left: 15px;
+}
+
+.flex {
+    display: flex;
 }
 
 
@@ -101,8 +105,6 @@ hr {
     align-self: stretch;
     width: 100%;
 }
-
-
 
 label>span {
     padding-right: 5px;
@@ -213,10 +215,8 @@ footer div hr {
     display: block;
 }
 
-
-
 #entry .imgBox {
-    height: 500px;
+    height: 250px;
 }
 
 #entry .loginForm {
@@ -225,7 +225,12 @@ footer div hr {
 }
 
 #entry input {
-    margin-top: 12px;
+    margin-top: 15px;
+    display: block;
+}
+
+#entry .inputRow {
+    width: 100%;
 }
 
 /* ############ -main- ############ */
@@ -322,9 +327,6 @@ footer div hr {
     text-align: right;
 }
 
-
-
-
 .textInputWithLabel {
     box-sizing: border-box;
     width: 50%;
@@ -353,7 +355,6 @@ footer div hr {
     width: 1%;
     flex: 3;
 }
-
 
 .twoInputs {
     width: 50%;
@@ -389,14 +390,13 @@ footer div hr {
 
 /* ############ -myProfile- ############ */
 
-.inputRow {
+#profile .inputRow {
     margin-bottom: 15px;
 }
 
 /* ############ -otherProfile- ############ */
 .infoRow {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
 }
@@ -416,7 +416,7 @@ footer div hr {
     grid-template: auto / 160px 1fr 1fr 1fr;
     grid-template-areas: "title . reviews lastMsg";
 
-    background: firebrick;
+    background: antiquewhite;
 }
 
 .headings-title,
@@ -476,11 +476,11 @@ footer div hr {
 
 .element-lastMsg {
     grid-area: lastMsg;
-
+    
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-
+    
     align-self: flex-start;
 }
 
@@ -615,6 +615,10 @@ footer div hr {
 
     #entry>* {
         flex: 1 1 50%;
+    }
+
+    #entry .imgBox {
+        height: 500px;
     }
 
     /* ############ -main- ############ */

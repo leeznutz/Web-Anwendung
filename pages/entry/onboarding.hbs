@@ -1,18 +1,22 @@
 ---
 {
 "title": "Onboarding",
-"template": "_entrylayout"
+"template": "_entrylayout",
+
+"firstName": "Linus"
 }
 ---
 <!--Todo: Variable -->
-<h2>Hallo { username }</h2>
+<h2>Hallo {{ page.firstName }}</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quaerat quae repudiandae repellendus. Quasi nulla
     praesentium ullam perspiciatis?</p>
 <form>
-    <input class="textInput" type="text" name="firstname" placeholder="Vorname">
-    <input class="textInput" type="text" name="lastname" placeholder="Nachname">
-    <input class="textInput" type="number" name="postcode" placeholder="PLZ">
-    <input class="textInput" type="text" name="city" placeholder="Stadt">
-    <input class="textInput" type="text" name="address" placeholder="Straße & Haus-Nr.">
+    <input class="textInput inputRow" type="text" name="firstname" placeholder="Vorname">
+    <input class="textInput inputRow" type="text" name="lastname" placeholder="Nachname">
+    <div class="inputRow flex">
+        <input class="textInput inputSplitSmall" type="number" name="postcode" placeholder="PLZ">
+        <input class="textInput inputSplitBig" type="text" name="city" placeholder="Stadt">
+    </div>
+    <input class="textInput inputRow" type="text" name="address" placeholder="Straße & Haus-Nr.">
     <input class="btnLink" type="submit" name="submit" value="Weiter">
 </form>
