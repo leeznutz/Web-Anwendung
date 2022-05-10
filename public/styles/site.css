@@ -38,7 +38,7 @@
     background: none;
 }
 
-.imgBox>img {
+.imgBox img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -456,7 +456,7 @@ footer div hr {
 .element-image {
     height: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 10px;  
     grid-area: image;
 }
 
@@ -506,26 +506,43 @@ footer div hr {
 
 
 /* ############ -groupchat- ############ */
+.groupFunctionElement {
+    width: 40%;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: rgb(106, 213, 255);
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.groupFunctions {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 #groupchat {
     display: flex;
     flex-direction: column;
 }
 
-#groupchat .chatHeader .imgBox {
+#groupView .groupHeader .imgBox {
     width: 90px;
     height: 90px;
 }
 
-#groupchat .chatHeader .imgBox img {
+#groupView .groupHeader .imgBox img {
     border-radius: 8px;
 }
 
-#groupchat .chat .imgBox {
+#groupView .chat .imgBox {
     width: 60px;
     height: 60px;
 }
-#groupchat .chat .imgBox img {
+#groupView .chat .imgBox img {
     border-radius: 8px;
 }
 .chatText {
@@ -536,7 +553,7 @@ footer div hr {
     border-radius: 10px;
 }
 
-.chatHeader {
+.groupHeader {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -601,6 +618,40 @@ footer div hr {
 .writeChat {
     width: 80%;
 }
+
+.participans {
+    height: 2em;
+}
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    z-index: 1;
+  }
+  
+  .dropdown-content >* {
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content .contact:hover {background-color: #f1f1f1}
+  
+
+  .contact {
+      display: flex;
+      align-items: center;
+  }
+  .contact > img {
+      height: 3em;
+      width: 3em;
+      padding-right: 10px;
+  }
 
 /* ############ -groupchat ende- ############ */
 
@@ -725,7 +776,6 @@ footer div hr {
         min-width: 75px;
         display: unset;
     }
-
-}
+    it stash pop and ap}
 
 /* end media(min-width:750px) */

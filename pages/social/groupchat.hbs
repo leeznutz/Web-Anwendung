@@ -4,14 +4,38 @@
 "template": "_layout",
 }
 ---
-<div id="groupchat" class="contentBlock">
-  <div class="chatHeader">
+
+<div id="groupView" class="contentBlock">
+  <div class="groupHeader">
     <div class="imgBox">
       <img src={{ global.heroImgMain }} alt="sendButton">
     </div>
     <div class="chat-name-back">
       <h3>Gruppenname</h3>
+      <div class="dropdown">
+        <img class="participans" src={{ global.participants }} alt="Teilnehmer">
+        <a href="/profile/otherProfile" class="contact">
+          <div class="dropdown-content ">
+            <img src={{ global.heroImgMain }} alt="sendButton">
+            <p>Name</p>
+          </div>
+        </a>
+      </div>
       <a class="center btnLink" href="/main">zurück</a>
+    </div>
+  </div>
+  <div class="groupFunctions">
+    <div class="groupFunctionElement">
+      <p class="center">Wörterbuch</p>
+      <div class="imgBox">
+        <img src={{ global.imgListElement }} alt="">
+      </div>
+    </div>
+    <div class="groupFunctionElement">
+      <p class="center">Lernen</p>
+      <div class="imgBox">
+        <img src={{ global.imgListElement }} alt="">
+      </div>
     </div>
   </div>
   <div class="chat">
@@ -26,7 +50,7 @@
         doloribus aut.
         Tenetur ullam obcaecati error eum? Magni doloribus distinctio quae fugiat eaque omnis nesciunt quibusdam
         porro.</p>
-<div class="empty"></div>
+      <div class="empty"></div>
     </div>
     <div class="chatEntry">
       <div class="sender">
@@ -52,7 +76,7 @@
         doloribus aut.
         Tenetur ullam obcaecati error eum? Magni doloribus distinctio quae fugiat eaque omnis nesciunt quibusdam
         porro.</p>
-<div class="empty"></div>
+      <div class="empty"></div>
     </div>
     <div class="chatEntry">
       <div class="sender">
@@ -65,7 +89,7 @@
         doloribus aut.
         Tenetur ullam obcaecati error eum? Magni doloribus distinctio quae fugiat eaque omnis nesciunt quibusdam
         porro.</p>
-<div class="empty"></div>
+      <div class="empty"></div>
     </div>
     <div class="chatEntry">
       <div class="empty"></div>
