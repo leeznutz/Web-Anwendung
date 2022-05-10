@@ -208,6 +208,25 @@ footer div hr {
     order: 2;
 }
 
+/** ############ -index- ############ */
+section.heroImage {
+    width: 100%;
+}
+
+.heroImage {
+    position: relative;
+}
+
+
+.cta-register {
+    position: absolute;
+    bottom: 45px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+
 /* ############ -entry- ########### */
 
 #entry {
@@ -664,6 +683,17 @@ footer div hr {
 
 
 @media(min-width:750px) {
+    /* ############ -index- ############ */
+    .cta-register {
+        display: none;
+    }
+
+    .overlay {
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
+        width: 400px;
+    }
 
     /* ############ -entry- ############ */
     #entry {
