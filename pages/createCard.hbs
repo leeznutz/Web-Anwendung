@@ -1,0 +1,73 @@
+---
+{
+"title": "test",
+"template": "_layout",
+
+"assignedGroups": [
+{
+"name": "Semester_3"
+},
+{
+"name": "gebärden_5"
+}
+],
+"assignedLessons": [
+{
+"name": "lektion 1"
+},
+{
+"name": "Lektion 2"
+}
+]
+}
+---
+<div id="createCard" class="contentBlock">
+    <div class="cardBody">
+        <form action="submit">
+            <textarea class="cardFront" name="cardFront" placeholder="Voerderseite"></textarea>
+        </form>
+        <form class="cardBackForm">
+            <input class="cardBackVideo" type="file" size="1">
+            <p class="center">Füge hier Das video der Gebärde ein</p>
+            <button class="btnwidth100">Upload</button>
+        </form>
+    </div>
+    <aside>
+        <div class="groupAssignment">
+            <p class="center">Gruppen:</p>
+            {{#each page.assignedGroups}}
+            <div class="assignmentRow">
+                <a class="center btnwidth100" href="#">{{ this.name }}</a>
+                <div class="spaceBetween"></div>
+                <a class="center btnRemove" href="#">Entfernen</a>
+            </div>
+            {{/each}}
+            <div class="assignmentRow">
+                <a class="center btnwidth100" href="#">Hinzufügen</a>
+            </div>
+        </div>
+        <div class="lessonAssignment">
+            <p class="center">Lektionen:</p>
+            {{#each page.assignedLessons}}
+            <div class="assignmentRow">
+                <a class="center btnwidth100" href="#">{{ this.name }}</a>
+                <div class="spaceBetween"></div>
+                <a class="center btnRemove" href="#">Entfernen</a>
+            </div>
+            {{/each}}
+            <div class="assignmentRow">
+                <a class="center btnwidth100" href="#">Hinzufügen</a>
+            </div>
+        </div>
+        <form action="submit">
+            <textarea class="cardFront" name="cardFront" placeholder="Info:"></textarea>
+        </form>
+        <form action="submit">
+            <textarea class="cardFront" name="cardFront" placeholder="Notizen:"></textarea>
+        </form>
+        <div class="operations">
+            <a class="center btnLink" href="#">Info:</a>
+            <a class="center btnLink" href="#">Notizen:</a>
+        </div>
+    </aside>
+</div>

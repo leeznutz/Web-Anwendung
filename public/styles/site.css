@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+.spaceBetween {
+    flex: 0 0 1px;
+}
+
 .btnLink {
     width: 100px;
     height: 2em;
@@ -13,6 +17,30 @@
     background-color: aqua;
     color: black;
     border-radius: 0.8em;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.btnRemove {
+    margin-left: 5px;
+    flex: 0;
+    min-width: 70px;
+    height: 1.5em;
+    background-color: rgb(241, 28, 0);
+    color: black;
+    border-radius: 0.3em;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.btnwidth100 {
+    width: 100%;
+    flex: 1;
+    border: 0;
+    height: 1.5em;
+    background-color: aqua;
+    color: black;
+    border-radius: 0.3em;
     text-decoration: none;
     transition: transform 0.2s;
 }
@@ -678,14 +706,14 @@ section.heroImage {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}  
+}
 
 .contact {
     display: flex;
     align-items: center;
 }
 
-#groupView .groupHeader .contact .imgBox{
+#groupView .groupHeader .contact .imgBox {
     height: 3em;
     width: 3em;
     padding-right: 10px;
@@ -700,15 +728,85 @@ section.heroImage {
 
 /* ############ -groupchat ende- ############ */
 
+/* ############ -create Card- ############ */
+
+#createCard {
+    display: flex;
+    flex-direction: column;
+}
+.groupAssignment {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lessonAssignment {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.assignmentRow {
+    display: flex;
+    margin: 3px 0;
+}
+
+.cardFront {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.cardBackForm {
+    width: 100%;
+    height: 200px;
+    border: 4px dashed #fff;
+}
+
+.cardBackForm p {
+    padding-top: 90px;
+    box-sizing: border-box;
+    padding-bottom: 110px;
+}
+
+.cardBackForm {
+    margin-bottom: 500px;
+    position: absolute;
+    top: 300%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cardBackVideo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+  }
+
+  .operations {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .cardBody {
+      position: relative;
+      margin-bottom: 275px;
+  }
+
 
 @media(min-width:750px) {
+
     /* ############ -index- ############ */
     .cta-register {
         display: none;
     }
 
     .overlay {
-        background-color: #ffffffab;
+        background-color: #ffffff85;
         padding: 10px;
         border-radius: 5px;
         position: absolute;
@@ -834,6 +932,31 @@ section.heroImage {
     .empty {
         min-width: 75px;
         display: unset;
+    }
+    /* ############ -createCard- ############ */
+    #createCard {
+        flex-direction: row;
+    }
+    #createCard aside {
+        margin-left: 50px;
+    }
+
+    .cardBody {
+        flex: 1;
+    }
+    #createCard aside {
+        flex: 1;
+    }
+
+    .cardBackForm {
+        margin-bottom: 500px;
+        position: absolute;
+        top: 140%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .groupAssignment {
+    margin-top: 0;
     }
 }
 
