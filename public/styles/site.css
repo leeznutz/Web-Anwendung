@@ -1,4 +1,5 @@
 /* ############ -utils- ############ */
+
 .center {
     display: flex;
     justify-content: center;
@@ -48,6 +49,7 @@
     padding: 30px;
     background: rgba(125, 125, 125, 0.2);
 }
+
 
 .searchBar {
     width: 100%;
@@ -576,6 +578,10 @@ section.heroImage {
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
+    background-color: #547e7e;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .chat-name-back {
@@ -651,6 +657,11 @@ section.heroImage {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
     z-index: 1;
+    right: 10%;
+}
+
+.dropdown {
+    position: relative;
 }
 
 .dropdown-content>* {
@@ -658,6 +669,7 @@ section.heroImage {
     padding: 8px 8px;
     text-decoration: none;
     display: block;
+
 }
 
 .dropdown-content .contact:hover {
@@ -679,6 +691,13 @@ section.heroImage {
     padding-right: 10px;
 }
 
+#groupView main {
+    background-color: rgba(175, 183, 190, 0.644);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
 /* ############ -groupchat ende- ############ */
 
 
@@ -689,6 +708,9 @@ section.heroImage {
     }
 
     .overlay {
+        background-color: #ffffffab;
+        padding: 10px;
+        border-radius: 5px;
         position: absolute;
         right: 25px;
         bottom: 25px;
