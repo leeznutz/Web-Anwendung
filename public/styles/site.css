@@ -73,6 +73,12 @@
     height: 100%;
 }
 
+.fill {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 .contentBlock {
     padding: 20px;
     background: rgba(125, 125, 125, 0.2);
@@ -574,7 +580,36 @@ section.heroImage {
     }
 }
 
-/*#####  test ende ##### */
+.dictionary__words {
+    overflow-y: scroll;
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.letter__headline {
+    background:rgb(106, 213, 255);
+    border:#008989;
+    position: sticky;
+    top: 0;
+}
+
+.letter__words {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.word-preview {
+    border: 1px solid #008989;
+    padding: 7px;
+    text-align: center;
+}
+
+
+
+/*##### test ende ##### */
 
 
 /* ############ -groupchat- ############ */
