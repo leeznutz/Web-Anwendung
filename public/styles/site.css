@@ -256,6 +256,31 @@ section.heroImage {
     right: 0;
 }
 
+.opinions__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opinion {
+    padding: 10px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.opinion__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    margin-bottom: 10px;
+    /** warum 4 px höher als Box? **/
+}
+
 
 /* ############ -entry- ########### */
 
@@ -814,6 +839,22 @@ section.heroImage {
         bottom: 25px;
         width: 400px;
     }
+
+    .opinions__container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .opinion {
+        width: 200px
+    }
+
+    .opinion__image {
+        width: 100px;
+    }
+
 
     /* ############ -entry- ############ */
     #entry {
