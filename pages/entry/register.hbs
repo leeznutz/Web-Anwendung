@@ -7,10 +7,10 @@
 <h2>Willkommen</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quaerat quae repudiandae repellendus. Quasi nulla
     praesentium ullam perspiciatis?</p>
-<form>
-    <input class="textInput inputRow" type="text" name="username" placeholder="Nutzername">
-    <input class="textInput inputRow" type="password" name="password" placeholder="Passwort">
-    <input class="textInput inputRow" type="password" name="passwordRep" placeholder="Passwort wiederholen">
-    <input class="textInput inputRow" type="email" name="email" placeholder="E-Mail">
+<form action="/entry/onboarding">
+    <input class="textInput inputRow" type="text" name="username" placeholder="Nutzername" required>
+    <input class="textInput inputRow" type="password" name="password" placeholder="Passwort" required>
+    <input class="textInput inputRow" type="password" name="passwordRep" placeholder="Passwort wiederholen" required>
+    <input class="textInput inputRow" type="email" name="email" placeholder="E-Mail" required autocomplete="on">
     <input class="btnLink" type="submit" name="submit" value="Registrieren">
 </form>

@@ -10,9 +10,9 @@
 <h2>Hallo {{ page.firstName }}</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quaerat quae repudiandae repellendus. Quasi nulla
     praesentium ullam perspiciatis?</p>
-<form>
-    <input class="textInput inputRow" type="text" name="firstname" placeholder="Vorname">
-    <input class="textInput inputRow" type="text" name="lastname" placeholder="Nachname">
+<form action="/main">
+    <input class="textInput inputRow" type="text" name="firstname" placeholder="Vorname" required>
+    <input class="textInput inputRow" type="text" name="lastname" placeholder="Nachname" required>
     <div class="inputRow flex">
         <input class="textInput inputSplitSmall" type="number" name="postcode" placeholder="PLZ">
         <input class="textInput inputSplitBig" type="text" name="city" placeholder="Stadt">

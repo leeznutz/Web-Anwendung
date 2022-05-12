@@ -74,10 +74,9 @@
 }
 
 .contentBlock {
-    padding: 30px;
+    padding: 20px;
     background: rgba(125, 125, 125, 0.2);
 }
-
 
 .searchBar {
     width: 100%;
@@ -264,7 +263,7 @@ section.heroImage {
 
 .opinion {
     padding: 10px;
-    width: 280px;
+    max-width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -281,6 +280,9 @@ section.heroImage {
     /** warum 4 px höher als Box? **/
 }
 
+.opinions__cta {
+    margin: 10px auto 0;
+}
 
 /* ############ -entry- ########### */
 
@@ -825,6 +827,11 @@ section.heroImage {
 
 @media(min-width:750px) {
 
+    .contentBlock{
+        padding: 30px;
+    }
+
+
     /* ############ -index- ############ */
     .cta-register {
         display: none;
@@ -848,13 +855,12 @@ section.heroImage {
     }
 
     .opinion {
-        width: 200px
+        max-width: 200px
     }
 
     .opinion__image {
         width: 100px;
     }
-
 
     /* ############ -entry- ############ */
     #entry {
