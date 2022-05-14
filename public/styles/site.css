@@ -24,7 +24,7 @@
 .btnRemove {
     margin-left: 5px;
     flex: 0;
-    min-width: 70px;
+    min-width: 90px;
     height: 1.5em;
     background-color: rgb(241, 28, 0);
     color: black;
