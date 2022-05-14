@@ -1,0 +1,49 @@
+<!--@formatter:off-->
+---
+{
+"title": "learn",
+"template": "_layout",
+"filter": [
+{"name": "1"},
+{"name": "Lektion 1sdadasdadsasdadasd"},
+{"name": "Gruppe 5"},
+{"name": "Lektion 3"}
+]
+}
+---
+<!--@formatter:on-->
+
+<div class="learn contentBlock">
+    <input class="searchBar learn__searchBar" type="text" placeholder="Suche">
+    <div class="tagList learn__filterList">
+        <button class="tagList__element tagList__element--add">
+            Hinzufügen
+        </button>
+        {{#each page.filter}}
+        <button class="tagList__element">
+            {{this.name}}
+        </button>
+        {{/each}}
+    </div>
+    <div class="card">
+        <div class="card__video center">
+            <iframe class="fillVideo " src="https://www.youtube.com/embed/7X8II6J-6mU" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="card__text">
+            Lösung
+        </div>
+    </div>
+    <div class="cardActions">
+            <button class="cardActions__action cardActions__action--unknown center">
+                Nicht gewusst
+            </button>
+            <button class="cardActions__action cardActions__action--difficult center">
+                schwierig
+            </button>
+            <button class="cardActions__action cardActions__action--known center">
+                gewusst
+            </button>
+    </div>
+</div>

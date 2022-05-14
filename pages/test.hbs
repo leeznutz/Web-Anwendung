@@ -4,85 +4,69 @@
 "template": "_layout",
 
 "groups": [
-    {
-        "image": "https://picsum.photos/400/200",
-        "title": "Hallo",
-        "reviews": "2",
-        "lastMsg": "lorem ipsum dolor sit amet consectetur adipisicing elit euismod er"
-    },
-    {
-        "image": "https://picsum.photos/400/200",
-        "title": "Wir sinds",
-        "reviews": "4",
-        "lastMsg": "lorem ipsum dolor sit amet consectetur adipisicing elit euismod er"
-    },
-    {
-        "image": "https://picsum.photos/400/200",
-        "title": "TITEL",
-        "reviews": "5",
-        "lastMsg": "lorem ipsum dolor sit amet consectetur adipisicing elit euismod er"
-    },
-    {
-        "image": "https://picsum.photos/400/200",
-        "title": "Die letzte Gruppe",
-        "reviews": "27",
-        "lastMsg": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ut dicta quaerat quasi
-                repudiandae, quisquam veritatis sapiente, totam eum vitae, voluptatum iure dolore porro consectetur eveniet nam
-                odit repellat nemo."
-    },
-    ]
+{
+"image": "https://picsum.photos/400/200",
+"title": "Hallo",
+"reviews": "2",
+"lastMsg": "lorem ipsum dolor sit amet consectetur adipisicing elit euismod er"
+},
+{
+"image": "https://picsum.photos/400/200",
+"title": "Wir sinds",
+"reviews": "4",
+"lastMsg": "lorem ipsum dolor sit amet consectetur adipisicing elit euismod er"
+},
+{
+"image": "https://picsum.photos/400/200",
+"title": "TITEL",
+"reviews": "5",
+"lastMsg": "lorem ipsum dolor sit amet consectetur adipisicing elit euismod er"
+},
+{
+"image": "https://picsum.photos/400/200",
+"title": "Die letzte Gruppe",
+"reviews": "27",
+"lastMsg": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ut dicta quaerat quasi
+repudiandae, quisquam veritatis sapiente, totam eum vitae, voluptatum iure dolore porro consectetur eveniet nam
+odit repellat nemo."
+},
+]
 }
 ---
-<section class="contentBlock">
-    <div class="group-list">
-        <div class="headings">
-            <h4 class="headings-title">Titel
-            </h4>
-            <h4 class="headings-reviews">Reviews
-            </h4>
-            <h4 class="headings-lastMsg">Letzte Nachricht
-            </h4>
-        </div>
-        {{#each page.groups}}
-        <article class="element">
-            <div class="imgBox element-image">
-                <img src={{ this.image }} alt="Gruppenbild">
-            </div>
-            <h4 class="element-title">{{ this.title }}</h4>
-            <p class="element-reviews">Anzahl: {{ this.reviews}}</p>
-            <div class="element-lastMsg">{{ this.lastMsg }}</div>
-        </article>
-        {{/each}}     
-    </div>
-</section>
-
 <div class="dictionary__words">
     <section class="letter">
         <h3 class="letter__headline">-- A --</h3>
         <div class="letter__words">
-            <article class="word-preview">
-                <div class="word-preview__video">
-                    <img class="fill" src={{ global.imgListElement }} alt="video">
-                </div>
-                <h4 class="word-preview__title">anklopfen</h4>
-            </article>
+            <a class="noDecoration" href="/learn">
+                <article class="word-preview">
+                    <div class="word-preview__video">
+                        <img class="fill" src={{ global.imgListElement }} alt="video">
+                    </div>
+                    <h4 class="word-preview__title">anklopfen</h4>
+                </article>
+            </a>
         </div>
     </section>
     <section class="letter">
-        <h3 class="letter__headline">-- B --</h3>   
+        <h3 class="letter__headline">-- B --</h3>
         <div class="letter__words">
-            <article class="word-preview">
-                <div class="word-preview__video">
-                    <img class="fill" src={{ global.imgListElement }} alt="video">
-                </div>
-                <h4 class="word-preview__title">Bauer</h4>
-            </article>
-            <article class="word-preview">
-                <div class="word-preview__video">
-                    <img class="fill" src={{ global.imgListElement }} alt="video">
-                </div>
-                <h4 class="word-preview__title">Beet</h4>
-            </article>
+            <a class="noDecoration" href="/learn">
+                <article class="word-preview">
+                    <div class="word-preview__video">
+                        <img class="fill" src={{ global.imgListElement }} alt="video">
+                    </div>
+                    <h4 class="word-preview__title">Bauer</h4>
+                </article>
+            </a>
+            <a class="noDecoration" href="/learn">
+
+                <article class="word-preview">
+                    <div class="word-preview__video">
+                        <img class="fill" src={{ global.imgListElement }} alt="video">
+                    </div>
+                    <h4 class="word-preview__title">Beet</h4>
+                </article>
+            </a>
         </div>
     </section>
 </div>

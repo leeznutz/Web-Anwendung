@@ -1,5 +1,8 @@
 /* ############ -utils- ############ */
 
+.noDecoration {
+    text-decoration: none;
+}
 .center {
     display: flex;
     justify-content: center;
@@ -79,13 +82,16 @@
     height: 100%;
 }
 
+.fillVideo {
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .contentBlock {
     padding: 20px;
     background: rgba(125, 125, 125, 0.2);
-}
-
-.searchBar {
-    width: 100%;
 }
 
 .bigSearchBar {
@@ -211,7 +217,7 @@ footer {
 }
 
 .footer-logo {
-    width: 150px;
+    width: 100px;
 }
 
 .footerSocials {
@@ -220,7 +226,7 @@ footer {
 
 .social {
     width: calc(100% /3);
-    max-width: 66px;
+    max-width: 33px;
     object-fit: cover;
     border-radius: 50%;
     padding: 5px;
@@ -364,7 +370,7 @@ section.heroImage {
 }
 
 .functionElement {
-    width: 25%;
+    width: 40%;
     padding-left: 2px;
     padding-right: 2px;
     background-color: rgb(106, 213, 255);
@@ -555,6 +561,7 @@ section.heroImage {
 .element-lastMsg {
     grid-area: lastMsg;
 
+
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -588,8 +595,8 @@ section.heroImage {
 }
 
 .letter__headline {
-    background:rgb(106, 213, 255);
-    border:#008989;
+    background: rgb(106, 213, 255);
+    border: #008989;
     position: sticky;
     top: 0;
 }
@@ -796,6 +803,7 @@ section.heroImage {
     display: flex;
     flex-direction: column;
 }
+
 .groupAssignment {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -841,28 +849,113 @@ section.heroImage {
     transform: translate(-50%, -50%);
 }
 
-.cardBackVideo{
+.cardBackVideo {
     position: absolute;
     width: 100%;
     height: 100%;
     outline: none;
     opacity: 0;
-  }
+}
 
-  .operations {
-      display: flex;
-      justify-content: flex-end;
-  }
+.operations {
+    display: flex;
+    justify-content: flex-end;
+}
 
-  .cardBody {
-      position: relative;
-      margin-bottom: 275px;
-  }
+.cardBody {
+    position: relative;
+    margin-bottom: 275px;
+}
+
+/** ############ -learn- ############ **/
+
+.searchBar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.tagList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tagList__element {
+    white-space: nowrap;
+    background-color: #008989;
+    border-radius: 5px;
+    border: 0;
+    height: 2em;
+    padding: 5px;
+}
+
+.tagList__element--add {
+    background-color: green;
+}
+
+.learn__searchBar {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.learn__filterList {
+    margin-bottom: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #7898a779;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card__video {
+    height: 200px;
+    width: 60%;
+}
+
+.card__text {
+    text-align: center;
+}
+
+.cardActions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex1 {
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+
+.cardActions__action {
+    width: 120px;
+    border-radius: 5px;
+    padding: 3px;
+    border: 0;
+}
+
+.cardActions__action--unknown {
+    background-color: red;
+}
+.cardActions__action--difficult {
+    background-color: yellow;
+}
+.cardActions__action--known {
+    background-color: green;
+}
+
+
 
 
 @media(min-width:750px) {
 
-    .contentBlock{
+    .contentBlock {
         padding: 30px;
     }
 
@@ -1015,10 +1108,12 @@ section.heroImage {
         min-width: 75px;
         display: unset;
     }
+
     /* ############ -createCard- ############ */
     #createCard {
         flex-direction: row;
     }
+
     #createCard aside {
         margin-left: 50px;
     }
@@ -1026,6 +1121,7 @@ section.heroImage {
     .cardBody {
         flex: 1;
     }
+
     #createCard aside {
         flex: 1;
     }
@@ -1037,8 +1133,14 @@ section.heroImage {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
     .groupAssignment {
-    margin-top: 0;
+        margin-top: 0;
+    }
+
+    /** ############ -learn- ############*/
+    .cardActions {
+        justify-content: space-around;
     }
 }
 
