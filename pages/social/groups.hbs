@@ -1,0 +1,59 @@
+---
+{
+"title": "test",
+"template": "_layout",
+
+"groups": [
+{
+"image": "https://picsum.photos/400/200",
+"title": "Gruppenname",
+"reviews": "2",
+"lastMsg": "lorem ipsum dolor sit amet consectetur adipisicing elit euismod er"
+},
+{
+"image": "https://picsum.photos/400/200",
+"title": "Gruppenname",
+"reviews": "4",
+"lastMsg": "lorem ipsum dolor sit amet consectetur adipisicing elit euismod er"
+},
+{
+"image": "https://picsum.photos/400/200",
+"title": "Gruppenname",
+"reviews": "5",
+"lastMsg": "lorem ipsum dolor sit amet consectetur adipisicing elit euismod er"
+},
+{
+"image": "https://picsum.photos/400/200",
+"title": "Gruppenname",
+"reviews": "27",
+"lastMsg": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ut dicta quaerat quasi
+repudiandae, quisquam veritatis sapiente, totam eum vitae, voluptatum iure dolore porro consectetur eveniet nam
+odit repellat nemo."
+},
+]
+}
+---
+<section class="contentBlock">
+    <div class="group-list">
+        <div class="headings">
+            <h4 class="headings-title">Gruppe
+            </h4>
+            <h4 class="headings-reviews">Anzahl Mitglieder
+            </h4>
+            <h4 class="headings-lastMsg">Letzte Nachricht
+            </h4>
+        </div>
+        {{#each page.groups}}
+        <a class="noDecoration" href="/social/groupchat">
+            <article class="element">
+                <div class="imgBox element-image">
+                    <img src={{ this.image }} alt="Gruppenbild">
+                </div>
+                <h4 class="element-title">{{ this.title }}</h4>
+                <p class="element-reviews">Teilnehmer: {{ this.reviews}}</p>
+                <div class="element-lastMsg">{{ this.lastMsg }}</div>
+            </article>
+        </a>
+        {{/each}}
+    </div>
+</section>
