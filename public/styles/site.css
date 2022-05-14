@@ -13,8 +13,21 @@
     flex: 0 0 1px;
 }
 
+
 .btnLink {
     width: 10rem;
+    height: 2em;
+    margin: 0 1rem;
+    background-color: aqua;
+    color: black;
+    border-radius: 0.8em;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+/** TODO: make Above a modifier of below*/
+.btnLinkNoWidth {
+    min-width: 2em;
     height: 2em;
     margin: 0 1rem;
     background-color: aqua;
@@ -246,8 +259,14 @@ footer {
     box-sizing: border-box;
 }
 
-#toTop {
+.toTop--desktop {
     display: none;
+}
+
+.toTop--mobile {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
 }
 
 footer div hr {
@@ -1060,8 +1079,12 @@ footer div hr {
         margin-top: 1rem;
     }
 
-    #toTop {
+    .toTop--desktop {
         display: flex;
+    }
+
+    .toTop--mobile {
+        display: none;
     }
 
     /* ############ -header- ############# */
