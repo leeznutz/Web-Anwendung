@@ -225,7 +225,7 @@ footer {
 }
 
 .footer-logo {
-    width: 100px;
+    width: 10rem;
 }
 
 .footerSocials {
@@ -234,7 +234,7 @@ footer {
 
 .social {
     width: calc(100% /3);
-    max-width: 33px;
+    max-width: 3.3rem;
     object-fit: cover;
     border-radius: 50%;
     padding: 0.5rem;
@@ -300,7 +300,7 @@ footer div hr {
 }
 
 .opinions__cta {
-    margin: 10px auto 0;
+    margin: 1rem auto 0;
 }
 
 /* ############ -entry- ########### */
@@ -310,16 +310,16 @@ footer div hr {
 }
 
 #entry .imgBox {
-    height: 250px;
+    height: 25rem;
 }
 
 #entry .loginForm {
     box-sizing: border-box;
-    padding-right: 100px;
+    padding-right: 10rem;
 }
 
 #entry input {
-    margin-top: 15px;
+    margin-top: 1.5rem;
     display: block;
 }
 
@@ -368,22 +368,19 @@ footer div hr {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 15px;
-    padding-bottom: 30px;
-    padding-left: 5px;
-    padding-right: 5px;
+
+    padding: 1.5rem 0.5rem 3rem;
     opacity: 0.7;
-    border-radius: 4px;
+    border-radius: 0.4rem;
 }
 
 .functionElement {
     width: 40%;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
     background-color: rgb(106, 213, 255);
     border: 1px solid black;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 2rem 0;
     transition: transform 0.2s;
 }
 
@@ -402,13 +399,13 @@ footer div hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 #profile .imgBox {
-    width: 250px;
-    height: 250px;
-    margin-bottom: 20px;
+    width: 25rem;
+    height: 25rem;
+    margin-bottom: 2rem;
 }
 
 .inputLabel {
@@ -433,8 +430,8 @@ footer div hr {
 }
 
 .changeProfileInfo>* {
-    margin-bottom: 15px;
-    margin-top: 10px;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
 }
 
 .inputSplitSmall {
@@ -445,7 +442,7 @@ footer div hr {
 
 .inputSplitBig {
     box-sizing: border-box;
-    margin-left: 3px;
+    margin-left: 0.3rem;
     width: 1%;
     flex: 3;
 }
@@ -456,7 +453,7 @@ footer div hr {
 }
 
 .profileHead {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -471,35 +468,35 @@ footer div hr {
 }
 
 #profile ul {
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 }
 
 #profile .imgBox>img {
-    border-radius: 15px;
+    border-radius: 1.5rem;
 }
 
 .profileInfo {
-    width: 300px;
+    width: 30rem;
 }
 
 /* ############ -myProfile- ############ */
 
 #profile .inputRow {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 /* ############ -otherProfile- ############ */
 .infoRow {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 
 /* ############ -test- ############ */
 .group-list {
     overflow-y: scroll;
-    height: 400px;
+    height: 40rem;
 }
 
 .headings {
@@ -507,7 +504,7 @@ footer div hr {
     position: sticky;
     top: 0;
 
-    grid-template: auto / 160px 1fr 1fr 1fr;
+    grid-template: auto / 16rem 1fr 1fr 1fr;
     grid-template-areas: "title . reviews lastMsg";
 
     background: antiquewhite;
@@ -521,7 +518,7 @@ footer div hr {
 }
 
 .headings-title {
-    text-indent: 30px;
+    text-indent: 3rem;
     grid-area: title;
 }
 
@@ -540,7 +537,7 @@ footer div hr {
     display: grid;
 
     grid:
-        "image title  " 80px "image lastMsg" 80px "reviews .    " auto / 160px 1fr;
+        "image title  " 8rem "image lastMsg" 8rem "reviews .    " auto / 16rem 1fr;
 
     align-items: center;
 }
@@ -548,12 +545,12 @@ footer div hr {
 .element-image {
     height: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 1rem;
     grid-area: image;
 }
 
 .element-image>img {
-    border-radius: 15px;
+    border-radius: 1.5rem;
 }
 
 .element-title {
@@ -582,7 +579,7 @@ footer div hr {
     }
 
     .element {
-        grid: "image title reviews lastMsg" 160px / 160px 1fr 1fr 1fr;
+        grid: "image title reviews lastMsg" 16rem / 16rem 1fr 1fr 1fr;
     }
 
     .element-reviews {
@@ -596,7 +593,7 @@ footer div hr {
 
 .dictionary__words {
     overflow-y: scroll;
-    height: 400px;
+    height: 40rem;
     width: 90%;
     margin: 0 auto;
 }
@@ -609,15 +606,15 @@ footer div hr {
 }
 
 .letter__words {
-    padding: 20px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .word-preview {
     border: 1px solid #008989;
-    padding: 7px;
+    padding: 0.7rem;
     text-align: center;
 }
 
@@ -629,12 +626,12 @@ footer div hr {
 /* ############ -groupchat- ############ */
 .groupFunctionElement {
     width: 40%;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
     background-color: rgb(106, 213, 255);
     border: 1px solid black;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     transition: transform 0.2s;
 }
 
@@ -651,29 +648,27 @@ footer div hr {
 }
 
 #groupView .groupHeader .imgBox {
-    width: 90px;
-    height: 90px;
+    width: 9rem;
+    height: 9rem;
 }
 
 .groupImg {
-    border-radius: 8px;
+    border-radius: 0.8rem;
 }
 
 #groupView .chat .imgBox {
-    width: 60px;
-    height: 60px;
+    width: 6rem;
+    height: 6rem;
 }
 
 #groupView .chat .imgBox img {
-    border-radius: 8px;
+    border-radius: 0.8rem;
 }
 
 .chatText {
-    padding: 5px;
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
-    border-radius: 10px;
+    padding: .5rem;
+    border: 1px solid black;
+    border-radius: 1rem;
 }
 
 .groupHeader {
@@ -681,15 +676,15 @@ footer div hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     background-color: #547e7e;
-    padding: 8px;
+    padding: 0.8rem;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
 .chat-name-back {
-    padding-left: 15px;
+    padding-left: 1.5rem;
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -699,7 +694,7 @@ footer div hr {
 
 .empty {
     display: none;
-    width: 80px;
+    width: 8rem;
 }
 
 .sender h5 {
@@ -713,32 +708,30 @@ footer div hr {
     align-items: center;
     justify-content: start;
     box-sizing: border-box;
-    max-width: 60px;
-    min-width: 60px;
+    max-width: 6rem;
+    min-width: 6rem;
 }
 
 .chat {
-    padding-top: 30px;
+    padding-top: 3rem;
     display: flex;
     flex-direction: column;
 }
 
 .chatEntry {
-    padding-bottom: 15px;
+    padding-bottom: 1.5rem;
     display: flex;
-    flex-direction: row;
 }
 
 .interact {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
 .interact .imgBox {
-    padding-left: 5px;
-    width: 20px;
-    height: 20px;
+    padding-left: 0.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .interact .imgBox img {
@@ -758,8 +751,8 @@ footer div hr {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    min-width: 16rem;
+    box-shadow: 0 0.8rem 1.6rem 0.8rem rgba(0, 0, 0, 0.4);
     z-index: 1;
     right: 10%;
 }
@@ -770,7 +763,7 @@ footer div hr {
 
 .dropdown-content>* {
     color: black;
-    padding: 8px 8px;
+    padding: 0.8rem 0.8rem;
     text-decoration: none;
     display: block;
 
@@ -792,14 +785,14 @@ footer div hr {
 #groupView .groupHeader .contact .imgBox {
     height: 3em;
     width: 3em;
-    padding-right: 10px;
+    padding-right: 1rem;
 }
 
 #groupView main {
     background-color: rgba(175, 183, 190, 0.644);
-    padding: 8px;
+    padding: 0.8rem;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: .5rem;
 }
 
 /* ############ -groupchat ende- ############ */
@@ -812,44 +805,44 @@ footer div hr {
 }
 
 .groupAssignment {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .lessonAssignment {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .assignmentRow {
     display: flex;
-    margin: 3px 0;
+    margin: 0.3rem 0;
 }
 
 .cardFront {
     width: 100%;
-    margin: 10px 0;
+    margin: 1rem 0;
 }
 
 .cardBackForm {
     width: 100%;
-    height: 200px;
-    border: 4px dashed #fff;
+    height: 20rem;
+    border: 0.4rem dashed #fff;
 }
 
 .cardBackForm p {
-    padding-top: 90px;
+    padding-top: 9rem;
     box-sizing: border-box;
-    padding-bottom: 110px;
+    padding-bottom: 11rem;
 }
 
 .cardBackForm {
-    margin-bottom: 500px;
+    margin-bottom: 50rem;
     position: absolute;
     top: 300%;
     left: 50%;
@@ -871,30 +864,29 @@ footer div hr {
 
 .cardBody {
     position: relative;
-    margin-bottom: 275px;
+    margin-bottom: 27.5rem;
 }
 
 /** ############ -learn- ############ **/
 
 .searchBar {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 5px;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
 }
 
 .tagList {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 0.5rem;
 }
 
 .tagList__element {
     white-space: nowrap;
     background-color: #008989;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     border: 0;
     height: 2em;
-    padding: 5px;
+    padding: 0.5rem;
 }
 
 .tagList__element--add {
@@ -903,25 +895,25 @@ footer div hr {
 
 .learn__searchBar {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .learn__filterList {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 1rem;
     background-color: #7898a779;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .card__video {
-    height: 200px;
+    height: 20rem;
     width: 60%;
 }
 
@@ -941,9 +933,9 @@ footer div hr {
 }
 
 .cardActions__action {
-    width: 120px;
-    border-radius: 5px;
-    padding: 3px;
+    width: 12rem;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
     border: 0;
 }
 
@@ -963,7 +955,7 @@ footer div hr {
 @media(min-width:750px) {
 
     .contentBlock {
-        padding: 30px;
+        padding: 3rem;
     }
 
 
@@ -974,27 +966,27 @@ footer div hr {
 
     .heroImg__overlay {
         background-color: #ffffff85;
-        padding: 10px;
-        border-radius: 5px;
+        padding: 1rem;
+        border-radius: 0.5rem;
         position: absolute;
-        right: 25px;
-        bottom: 25px;
-        width: 400px;
+        right: 2.5rem;
+        bottom: 2.5rem;
+        width: 40rem;
     }
 
     .opinions__container {
         flex-direction: row;
         justify-content: center;
-        gap: 20px;
+        gap: 2rem;
         align-items: stretch;
     }
 
     .opinion {
-        max-width: 200px
+        max-width: 20rem;
     }
 
     .opinion__image {
-        width: 100px;
+        width: 10rem;
     }
 
     /* ############ -entry- ############ */
@@ -1007,7 +999,7 @@ footer div hr {
     }
 
     #entry .imgBox {
-        height: 500px;
+        height: 50rem;
     }
 
     /* ############ -main- ############ */
@@ -1044,13 +1036,13 @@ footer div hr {
         background-color: #008989;
         display: flex;
         flex-direction: row;
-        padding: 10px 10px;
+        padding: 1rem 1rem;
         align-items: center;
         flex-wrap: nowrap;
     }
 
     .footerLink {
-        margin-top: 20px;
+        margin-top: 2rem;
         order: 1;
         min-width: calc(100% / 5);
     }
@@ -1060,7 +1052,7 @@ footer div hr {
     }
 
     footer .footerLink hr {
-        margin-top: 10px;
+        margin-top: 1rem;
     }
 
     #toTop {
@@ -1070,7 +1062,7 @@ footer div hr {
     /* ############ -header- ############# */
     header nav {
         display: flex;
-        width: 400px;
+        width: 40rem;
         height: 2em;
         margin: auto 0;
     }
@@ -1083,8 +1075,8 @@ footer div hr {
     }
 
     #profile .imgBox {
-        width: 165px;
-        height: 165px;
+        width: 16.5rem;
+        height: 16.5rem;
     }
 
     .profileImg {
@@ -1112,7 +1104,7 @@ footer div hr {
 
     /* ############ -groupchat- ############ */
     .empty {
-        min-width: 75px;
+        min-width: 7.5rem;
         display: unset;
     }
 
@@ -1122,7 +1114,7 @@ footer div hr {
     }
 
     #createCard aside {
-        margin-left: 50px;
+        margin-left: 5rem;
     }
 
     .cardBody {
@@ -1134,7 +1126,7 @@ footer div hr {
     }
 
     .cardBackForm {
-        margin-bottom: 500px;
+        margin-bottom: 50rem;
         position: absolute;
         top: 140%;
         left: 50%;
