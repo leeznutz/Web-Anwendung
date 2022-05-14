@@ -1,12 +1,23 @@
 <header>
-    <a class="header-logo logo" href="/main"><img src={{ global.logoURL }} alt="LOGO"></a>
+    <a class="header-logo logo" href="/main">
+        <img src={{ global.logoURL }} alt="LOGO">
+    </a>
     <nav>
         {{#each page.innerlinks}}
         <a class="center" href={{ this.url }}>{{ this.title }}</a>
         {{/each}}
     </nav>
     <div class="accManagement">
+        {{#if page.registered}}
+        <a class="center btnLink" href="/">Logout</a>
+        <div class="imgBox imgBox--profile">
+            <a href="/profile/myProfile">
+                <img src={{global.imgListElement}} alt="">
+            </a>
+        </div>
+        {{else}}
         <a class="center btnLink" href="/entry/register">Registrieren</a>
         <a class="center btnLink" href="/entry/login">Login</a>
+        {{/if}}
     </div>
 </header>
