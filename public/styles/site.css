@@ -90,8 +90,8 @@
 }
 
 .imgBox--profile img {
-    aspect-ratio: 1 / 1;
     border-radius: 50%;
+    aspect-ratio: 1 / 1;
 }
 
 .fill {
@@ -281,12 +281,23 @@ footer div hr {
     order: 2;
 }
 
+.onboarding__image {
+    align-self: center;
+    aspect-ratio: 1 / 1;
+    min-width: 10rem;
+    max-width: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
 /** ############ -index- ############ */
 .heroImage {
     width: 100%;
+    position: relative;
 }
 
-.heroImage__img {
+.heroImage__image {
     position: relative;
 }
 
@@ -339,7 +350,6 @@ footer div hr {
 
 #entry .loginForm {
     box-sizing: border-box;
-    padding-right: 10rem;
 }
 
 #entry input {
@@ -528,7 +538,7 @@ footer div hr {
     position: sticky;
     top: 0;
 
-    grid-template: auto / 16rem 1fr 1fr 1fr;
+    grid-template: auto / 10rem 1fr 1fr 1fr;
     grid-template-areas: "title . reviews lastMsg";
 
     background: antiquewhite;
@@ -561,7 +571,7 @@ footer div hr {
     display: grid;
 
     grid:
-        "image title  " 8rem "image lastMsg" 8rem "reviews .    " auto / 16rem 1fr;
+        "image title  " 5rem "image lastMsg" 5rem "reviews .    " auto / 10rem 1fr;
 
     align-items: center;
 }
@@ -603,7 +613,7 @@ footer div hr {
     }
 
     .element {
-        grid: "image title reviews lastMsg" 16rem / 16rem 1fr 1fr 1fr;
+        grid: "image title reviews lastMsg" 10rem / 10rem 1fr 1fr 1fr;
     }
 
     .element-reviews {
@@ -612,6 +622,15 @@ footer div hr {
 
     .element-lastMsg {
         align-self: auto;
+    }
+
+    .heroImage__overlay {
+        position:absolute;
+        width: 40rem;
+        bottom: 2rem;
+        right: 2rem;
+        background-color: rgba(255, 255, 255, 0.623);
+        border-radius: 0.5rem;
     }
 }
 
@@ -1011,6 +1030,10 @@ footer div hr {
 
     .opinion__image {
         width: 10rem;
+    }
+
+    .onboarding__form  {
+        padding-right: 10rem;
     }
 
     /* ############ -entry- ############ */
